@@ -1,17 +1,42 @@
-.cabecalho__container{
+.cabecalho__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top:0
+  top: 0
 }
 
-.cabecalho__pesquisar__item{
+.cabecalho__pesquisar__item {
   display: none
 }
 
+.rodape__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.rodape__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+}
+.superior__secao__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: auto;
+  gap: 15px;
+}
+
 @media (min-width: 834px) {
-  .cabecalho__pesquisar__item{
+  .cabecalho__pesquisar__item {
     display: block
   }
+
+  .rodape__container {
+    justify-content: space-between;
+  }
+
+
 }
